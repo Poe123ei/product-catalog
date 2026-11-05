@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Product Catalog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Product Catalog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <section id="search">
+        <h2>Search Products</h2>
+        <form>
+            <input type="text" placeholder="Search for products..." name="search">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Filter and Sort Section -->
+    <section id="filter-sort">
+        <div class="filter">
+            <h3>Filter by Category</h3>
+            <select name="category" id="category-filter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home-garden">Home & Garden</option>
+                <option value="sports">Sports</option>
+            </select>
+        </div>
+        <div class="sort">
+            <h3>Sort by Price</h3>
+            <select name="sort" id="price-sort">
+                <option value="low-to-high">Low to High</option>
+                <option value="high-to-low">High to Low</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section id="products">
+        <h2>All Products</h2>
+        <div class="product-grid">
+            <!-- Example product -->
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Category: Electronics</p>
+                <p>$19.99</p>
+                <button>View Details</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Product Catalog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
